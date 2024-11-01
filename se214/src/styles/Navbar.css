@@ -48,7 +48,9 @@
 }
 
 .nav-links a:hover {
-  opacity: 0.7;
+  color: rgba(21, 58, 209, 1);
+  text-decoration: underline rgba(21, 58, 209, 1) 3px;
+  text-underline-offset: 10px;
 }
 
 .nav-buttons {
