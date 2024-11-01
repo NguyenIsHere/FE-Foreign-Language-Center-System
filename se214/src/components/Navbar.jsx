@@ -170,7 +170,6 @@ const Navbar = ({ role }) => {
           <img src={logo} alt='' />
         </a>
       </div>
-
       <ul className='nav-links'>
         {roleData.pages.map((page, index) => (
           <li key={index}>
@@ -178,7 +177,6 @@ const Navbar = ({ role }) => {
           </li>
         ))}
       </ul>
-
       <div className='nav-buttons'>
         {roleData.buttons.map((button, index) => (
           <React.Fragment key={index}>
@@ -217,7 +215,7 @@ const Navbar = ({ role }) => {
           </React.Fragment>
         ))}
       </div>
-
+      {/* Overlay đăng nhập */}
       {isLoginOverlayVisible && (
         <div className='overlay'>
           <div className='overlay-content'>
@@ -231,7 +229,7 @@ const Navbar = ({ role }) => {
           </div>
         </div>
       )}
-
+      {/* Overlay đăng ký */}
       {isRegisterOverlayVisible && (
         <div className='overlay'>
           <div className='overlay-content'>
